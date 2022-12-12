@@ -5,8 +5,8 @@
 
 using System.Security.Cryptography;
 
-Console.WriteLine("quantidade de numeros que ira digitar");
-
+Console.Write("quantidade de numeros que ira digitar: ");
+Console.WriteLine();
 int n = int.Parse(Console.ReadLine());
 int aux, soma = 0;
 int[] vet = new int[n];
@@ -42,6 +42,7 @@ for (int i = 0; i < n; i++)
 
 Console.WriteLine();
 Console.WriteLine();
+Console.WriteLine("ordem decrescente");
 for (int k = 0; k < n; k++)
 
 {
@@ -50,6 +51,7 @@ for (int k = 0; k < n; k++)
 }
 Console.WriteLine();
 Console.WriteLine();
+
 // ordenando de forma decrrescente
 
 for (int i = 0; i < vet.Length; i++)
@@ -72,6 +74,7 @@ for (int i = 0; i < n; i++)
 
 Console.WriteLine();
 Console.WriteLine();
+Console.WriteLine("ordem decrescente");
 for (int k = 0; k < n; k++)
 
 {
@@ -89,11 +92,14 @@ for (int i = 0; i < n; i++)
         i++;
     }
 }
-Console.WriteLine("\n\n\n soma" + soma);
+Console.WriteLine("\n\n\n soma " + soma);
 
 int numeroAnterior = 0;
 int numeroAtual = 1;
 int fibo=0;
+Console.WriteLine();
+Console.WriteLine(  );
+Console.WriteLine("sequencia fibonacci ate o valor da soma");
 for (int i = 0; i <= soma; i++)
 {
     if (fibo<soma)
